@@ -1,0 +1,12 @@
+n = 2
+
+def C(n):
+  if n == 1:
+   return 1
+  elif n >= 2:
+    return C(n-1) + n * n
+  else:
+    print("Opção inválida!")
+
+
+print(f"C({n}) = {C(n)}")
