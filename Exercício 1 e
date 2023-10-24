@@ -1,0 +1,15 @@
+n = 3
+
+
+def E(n):
+  if n == 1:
+   return 3
+  elif n == 2:
+    return 5
+  elif n > 2:
+    return (n-1)*E(n-1) + (n-2)*E(n-2)
+  else:
+    print("Opção Inválida")
+
+
+print(f"E({n}) = {E(n)}")
