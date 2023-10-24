@@ -1,0 +1,21 @@
+lista = []
+
+
+def S(numero):
+  if numero % 2 != 0:
+    S((numero + 1))
+  elif numero % 2 == 0:
+    j = 0
+    while(j != (numero / 2)):
+      lista.append('q')
+      j += 1
+
+
+print("S(0) = p")
+for i in range(1, 6):
+  S(i)
+  if i % 2 == 0:
+    print(f"S({i}) = p + {lista.count('q')}q")
+  elif i % 2 != 0:
+    print(f"S({i}) = p - {lista.count('q')}q")
+  lista.clear()
