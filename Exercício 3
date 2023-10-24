@@ -1,0 +1,24 @@
+def T(n):
+    if n == 2:
+        return True
+
+    elif n > 2 and n % 2 == 1:
+        return T(n - 3)
+
+    elif n > 2 and n % 2 == 0:
+        return T(n / 2)
+
+    else: 
+      return False
+
+
+def pertence(numero):
+  if T(numero):
+      print(f"{numero} não pertence a T")
+  else:
+      print(f"{numero} pertence a T")
+
+
+testes = [6, 7, 19, 12]
+for i in testes:
+  pertence(i)
