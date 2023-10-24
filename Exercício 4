@@ -1,0 +1,23 @@
+def M(n):
+  if n == 2 or n == 3:
+    return True
+  elif n < 2:
+    return False
+
+  for i in range(2, n):
+    if M(i) and M(n - i):
+      return True
+
+  return False
+
+
+def pertence(s):
+  if M(s) == 1:
+    print(f"{s} pertence a M!")
+  else:
+    print(f"{s} não pertence a M!")
+
+
+numeros = [ 6 , 9 , 16 , 21 , 26 , 54 , 72 , 218]
+for i in range(7):
+  pertence(numeros[i])
