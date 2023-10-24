@@ -1,0 +1,11 @@
+import math
+n = 2
+
+def A(numero):
+  if numero == 1:
+    return 2
+  else:
+    return math.pow(A(numero - 1), -1)
+  
+
+print(f"A({n}) = {A(n)}")
