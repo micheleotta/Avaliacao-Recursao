@@ -4,8 +4,10 @@ n = 2
 def A(numero):
   if numero == 1:
     return 2
-  else:
+  elif numero >= 2:
     return math.pow(A(numero - 1), -1)
+  else:
+    return -1  # indicar erro
   
 
 print(f"A({n}) = {A(n)}")
