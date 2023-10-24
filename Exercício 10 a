@@ -1,0 +1,9 @@
+def bac(numero):
+  if numero == 0:
+    return 50000
+  else:
+    return bac(numero - 1) * 3
+
+
+for i in range(5):
+  print(f"Hora {i} =  {bac(i)} bactérias")
