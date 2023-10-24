@@ -1,0 +1,17 @@
+
+n = 4
+
+
+def G(n):
+  if n == 1:
+   return 1
+  elif n == 2:
+    return 2
+  elif n == 3:
+    return 3
+  elif n > 3:
+    return G(n-1) + 2*G(n-2) + 3*G(n-3) 
+  else:
+    print("Opção Inválida")
+
+print(f"G({n}) = {G(n)}")
