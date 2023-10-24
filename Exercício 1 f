@@ -1,0 +1,15 @@
+def W(numero):
+  if numero == 1:
+    return 2
+  elif numero == 2:
+    return 5
+  elif numero > 2:
+    return W(numero - 1) * W(numero - 2)
+  else:
+    return -1 # indica erro, número deve ser maior que 2
+
+
+print(f"W(2) = {W(2)}")
+print(f"W(3) = {W(3)}")
+print(f"W(4) = {W(4)}")
+print(f"W(5) = {W(5)}")
