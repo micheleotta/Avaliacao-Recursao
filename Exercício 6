@@ -1,0 +1,19 @@
+def W(s):
+  if s == "a" or s == "b" or s == "c" or s == "(" or s == ")":
+      return True
+  if s.startswith("a") and s.endswith("c"):
+    for i in s:  
+      return W(i)
+  return False
+
+
+def pertence(c):
+  if W(c) == 1:
+    print(f'{c} pertence a W')
+  else:
+    print(f'{c} não pertence a W')
+
+
+conjunto = ["a(b)c", "a(a(b)c)c", "a(abc)c", "a(a(a(a)c)c)c", "a(aacc)c"]
+for c in conjunto:
+  pertence(c)
