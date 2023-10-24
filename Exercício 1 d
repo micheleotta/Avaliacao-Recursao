@@ -1,0 +1,14 @@
+import math
+n = 2
+
+
+def P(numero):
+  if numero == 1:
+    return 1
+  elif numero >= 2:
+    return (pow(numero, 2) * P(numero - 1) + numero - 1)
+  else:
+    return -1 # indica erro
+
+    
+print(f"P({n}) = {P(n)}")
