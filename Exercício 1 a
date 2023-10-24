@@ -1,0 +1,11 @@
+n = 2
+
+
+def A(n):
+  if n == 1:
+   return 10
+  else:
+    return A(n-1) + 10
+
+
+print(f"A({n}) = {A(n)}")
