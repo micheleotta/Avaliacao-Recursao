@@ -1,0 +1,14 @@
+termo_inicial = 1
+razao = 2
+
+
+def PG(numero):
+  if numero == 1:
+    return termo_inicial
+  else:
+    return PG(numero - 1) * razao
+
+
+print("PROGRESSÃO GEOMÉTRICA de razão 2 e termo inicial 1:")
+for i in range(1, 11):
+  print(f"a{i} = {PG(i)}")
