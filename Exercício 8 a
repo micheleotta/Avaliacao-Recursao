@@ -1,0 +1,9 @@
+def S(numero):
+  if numero == 1:
+    return 1
+  else:
+    return 3 * S(numero - 1)
+
+
+for i in range (1, 11):
+  print(f"{S(i)}")
